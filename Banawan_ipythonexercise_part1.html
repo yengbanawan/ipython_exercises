@@ -1,0 +1,135 @@
+Part I
+-already installed
+
+Part II
+1. ipython 2.3.1
+
+2. ipython output:
+{0: 1.0564814082278093, 1: 1.3720747030101779, 2: 1.2223076683913714, 3: -1.219234305684625, 4: 0.5360860323716662, 5: 0.6290005399520323, 6: 0.5579732688712858}
+
+python output:
+{0: 1.0564814082278093, 1: 1.3720747030101779, 2: 1.2223076683913714, 3: -1.219234305684625, 4: 0.5360860323716662, 5: 0.6290005399520323, 6: 0.5579732688712858}
+
+Ipython and the python interpreter have the same output.
+
+3.output:
+b = [1,2,3]
+
+b.
+b.append   b.extend   b.insert   b.remove   b.sort     
+b.count    b.index    b.pop      b.reverse  
+
+the tab completion shows the available operations that can be used by the variable
+
+4.import datetime
+
+datetime.
+datetime.MAXYEAR        datetime.datetime       datetime.timedelta
+datetime.MINYEAR        datetime.datetime_CAPI  datetime.tzinfo
+datetime.date           datetime.time 
+
+it shows the datetime module's methods and attributes
+
+5.b = [1,2,3]
+
+b
+Out[2]: [1, 2, 3]
+
+output shown is the value of the variable
+
+6.add_numbers?
+Type:        function
+String form: <function add_numbers at 0x7f4d689a7cf8>
+File:        /home/ubuntu01/<ipython-input-1-06988e3c78d8>
+Definition:  add_numbers(a, b)
+Docstring:
+Add two number together
+Returns
+------
+the_sum : type of arguments
+
+shows the docstring and description of the function
+
+add_numbers??
+Type:        function
+String form: <function add_numbers at 0x7f4d689a7cf8>
+File:        /home/ubuntu01/<ipython-input-1-06988e3c78d8>
+Definition:  add_numbers(a, b)
+Source:
+def add_numbers(a,b):
+    """
+    Add two number together
+    Returns
+    ------
+    the_sum : type of arguments
+    """
+    return a+b
+
+shows the definition and source code of the function
+
+7. np.*load*
+returns an invalid syntax
+
+but:
+np.*load*?
+np.load
+np.loads
+np.loadtxt
+np.pkgload
+
+this shows all names that matched the word that is combined with * (wildcard expression)
+
+8. %run ipython_script_test.py
+
+9.In [2]: c
+Out[2]: 7.5
+
+In [3]: result
+Out[3]: 1.4666666666666666
+
+The variables that is defined and initialized inside the script are accessible in the ipython interactive shell.
+There is nothing much difference between running it from a normal Python interpreter.
+
+10.
+
+11. yes, it works on python shell. The shell interprets a blank line in a source code that is pasted as an end, so it terminates the program. After it is executed it will raise and IntendationError.
+
+12. %paste takes the code that is copied and executes it as a single block.
+
+13. Editors that have 3rd party extensions enabling blocks of code to be sent directly from the editor to a running Ipython shell are Emacs and vim.
+
+14. keyboard shortcuts: (paste)Ctrl-Shift-V , (clear screen)Ctrl-l , (move cursor forward one character) Ctrl-f , (move cursor back one character) Ctrl-b
+
+15. it prints all the tracebacks with lines of context in every position in the stack
+
+16. magic command that can control the context that is being shown is %mode
+
+17. display the ipython quick reference card(%quickref), execute formatted code from clipboard(%paste), manual pasting of code(%cpaste), delete all variable and names defined(%reset), run a script(%run), show detailed documentation of magic commands(%magic)
+
+18. result: 1000 loops, best of 3: 809 µs per loop
+
+19. result: %reset
+Once deleted, variables cannot be recovered. Proceed (y/[n])? 
+
+20. automagic is used as %automagic . It lets magic functions be used without the % sign as long as it is unique and has no similar variable name.
+
+
+Part 3
+Yes, it can launch multiple Ipython processes in tabs, it can allow switching between tasks and it can share a process with the Ipython HTML notebook application.
+
+Part 4
+1. placing two dashes pylab flag: ipython --pylab
+
+2. %gui lets the top level interactive namespace to produce an interactive computing environment reminiscent of MATLAB and other domain-specific computing environments [1]
+
+3. matplotlib is a 2D and 3D graphics library for generating scientific figures.
+%matlpotlibe inline
+
+4. %matplotlib qt
+
+5. figure can be resined using the button for configuring subplots(located at the left of the save button)
+
+6. graph of integral function
+
+reference:
+https://books.google.com.ph/books?id=JtJAkfzds4wC&pg=PA43&lpg=PA43&dq=ipython+datetime.%3Ctab%3E&source=bl&ots=pQsKrvO_8i&sig=4Hlh4yb6ZKhrGTN55FYZH7YFyTc&hl=en&sa=X&ei=FNTSVP6hB6PImAWWvoKYBQ&ved=0CDQQ6AEwBQ#v=onepage&q=ipython%20datetime.%3Ctab%3E&f=false
